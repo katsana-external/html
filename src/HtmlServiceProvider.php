@@ -49,7 +49,7 @@ class HtmlServiceProvider extends ServiceProvider implements DeferrableProvider
     protected function registerFormBuilder(): void
     {
         $this->app->singleton('form', static function (Container $app) {
-            $form = new FormBuilder($app->make('html'), $app->make('url'), $app->make('view'));
+            $form = new FormBuilder($app->make('html'), $app->make('url'), $app->make('view'), $app->make('request'));
 
             return $form->setSessionStore($app->make('session.store'));
         });
