@@ -28,9 +28,9 @@
         "illuminate/translation": "^9.0",
         "illuminate/support": "^9.0",
         "laravie/html": "^7.3",
-        "laravie/query-filter": "3.x-dev",
-        "orchestra/contracts": "^7.0",
-        "orchestra/support": "^7.0"
+        "laravie/query-filter": "dev-master",
+        "orchestra/contracts": "7.x-dev",
+        "orchestra/support": "7.x-dev"
     },
     "require-dev": {
         "orchestra/testbench": "^7.0"
@@ -43,5 +43,11 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/query-filter"
+        }
+    ]
 }
